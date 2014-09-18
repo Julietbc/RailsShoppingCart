@@ -1,9 +1,9 @@
 
-<%= form_for :shopper do |f| %>
-  User name: <%= f.text_field :user_name %><br />
-  Email : <%= f.text_field  :email %><br />
-  Password :<%= f.text_field :password %><br />
-  <%= f.submit placeholder = 'create' %>
+<%= form_tag sign_in_shoppers_path do %>
+  User name: <%= text_field_tag :user_name %><br />
+  Email : <%= text_field_tag  :email %><br />
+  Password :<%= password_field_tag :password %><br />
+  <%= submit_tag 'Sign in' %>
 <% end %>
 
 
