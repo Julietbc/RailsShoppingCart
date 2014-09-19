@@ -7,8 +7,8 @@ class ShoppersController < ApplicationController
 
 
 
-  def new
-    @shopper = Shopper.new
+  def new_shopper(user_name,email,password)
+    # @shopper = Shopper.new
   end
 
 
@@ -22,6 +22,8 @@ class ShoppersController < ApplicationController
   end
 
 
+  def sign_in_form
+  end
 
   def sign_in
     @shopper = Shopper.find_by_user_name(params[:user_name])

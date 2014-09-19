@@ -1,7 +1,6 @@
 
 <%= form_tag sign_in_shoppers_path do %>
   User name: <%= text_field_tag :user_name %><br />
-  Email : <%= text_field_tag  :email %><br />
   Password :<%= password_field_tag :password %><br />
   <%= submit_tag 'Sign in' %>
 <% end %>

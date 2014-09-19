@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :shoppers do
     collection do
+      get 'sign_in_form'
       post 'sign_in'
     end
   end

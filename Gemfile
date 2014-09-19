@@ -30,6 +30,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'shoulda-matchers', require: false
   gem 'factory_girl_rails'
+  gem 'capybara', '~> 2.4.1'
 end
 
 # Use ActiveModel has_secure_password

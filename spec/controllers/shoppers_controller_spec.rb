@@ -21,7 +21,7 @@ RSpec.describe ShoppersController, :type => :controller do
   describe '#create - redirect_to' do
     it 'should redirect to the shoppers homepage' do
       post :create, shopper: FactoryGirl.attributes_for(:shopper)
-      expect(response).to redirect_to shoppers_path(@shopper)
+      expect(response).to redirect_to(shopper_url(shopper.id))
     end
   end
 end

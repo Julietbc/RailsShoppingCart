@@ -1,7 +1,10 @@
 
 <div class="button-container">
-  <button class="pure-button sign-in"> <%= link_to 'Sign in', shoppers_path %></button>
+  <%= link_to sign_in_form_shoppers_path do %>
+    <button class="pure-button sign-in">Sign in</button>
+  <%end%>
 
 
-  <button class="pure-button sign-up"> <%= link_to 'Sign up', new_shopper_path %></button>
-</div>
+   <%= link_to new_shopper_path do %>
+    <button class="pure-button sign-up">Sign up</button>
+  <%end%>
